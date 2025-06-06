@@ -4,7 +4,7 @@ import com.birdbrain.Finch;
 
 public class FinchDemo {
     public static void main(String[] args) {
-        Finch myFinch = new Finch();
+        Finch myFinch = new Finch("A");
 
         myFinch.playNote(60,0.5);
 
@@ -13,8 +13,9 @@ public class FinchDemo {
             myFinch.pause(1);
             myFinch.setBeak(0, 0, 0);
             myFinch.pause(1);
+            
         }
-
+       
         myFinch.stopAll();
         myFinch.disconnect();
     }
